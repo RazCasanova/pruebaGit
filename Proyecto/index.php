@@ -7,10 +7,11 @@
 		$datos=contenido();
 	?>
 </head>
-<body style="background-color:#343a40;color:white">
+<body style="background-color:#000000;color:white">
 <div class="container">
-		<h1>Presentacion de imagenes tipo Google</h1>
-		<h2>Bestias mitólogicas</h2>
+		<h1>Presentación de imagenes tipo Google</h1>
+		<h2>Planetas</h2>
+
 		<!--
 		<ul class="gridder">
 			<li class="gridder-list" data-griddercontent="#gridder-content-0">
@@ -38,9 +39,8 @@
 			?>
 			<li class="gridder-list" 
 			data-griddercontent="<?php echo '#gridder-content-'.$i ?>">
-				<img src="<?php echo $d[0] ?>">
+				<img src="<?php echo $d[0] ?>" title="<?php echo $d[1] ?>">
 			</li>
-
 			<?php
 		endfor;  
 		?>
@@ -73,7 +73,7 @@
 		$(".gridder").gridderExpander({
 			scroll: true,
 			scrollOffset: 60,
-                    scrollTo: "listitem", // panel or listitem
+                    scrollTo: "listitem",
                     animationSpeed: 100,
                     animationEasing: "easeInOutExpo",
                     showNav: true,
